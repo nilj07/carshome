@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    font-family: poppins;
+    color: white;
+}
+nav{
+   position: fixed;
+   width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 30px;
+    font-size: 15px;
+    box-shadow: inset 10px black;
+    z-index: 99;
+    h4{
+        font-weight: 100;
+        font-size: 18px;
+    }
+    background-color:transparent;
+}
+nav h4{
+    position: relative;
+}
+
+nav h4::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: rgba(255, 0, 0, 0.589);
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+}
+
+nav h4:hover{
+    cursor: pointer;
+    animation-name: new;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+}
+
+nav img{
+    height: 30px;
+}
+.hero-img{
+    position: relative;
+}
+.hero-img img{
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+.main{
+    position: relative;
+}
+.page1{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+.page2{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.664);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.first{
+    display: flex;
+    padding-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 50px;
+    p{
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+}
+.first img{
+    width: 60vw;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.page2 video{
+    object-fit: cover;
+    position: absolute;
+    width: 70%;
+    height: 80vh;
+}
+.page2 p{
+    position: relative;
+    transition: 3s ease;
+    padding-left: 60vw;
+    padding-right: 200px;
+    font-size: 25px;
+    color: white;
+}
